@@ -1,0 +1,27 @@
+<div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group">
+        <label for="title">Url</label>
+        <input
+          type="text"
+          class="form-control"
+          id="longUrl"
+          required
+          [(ngModel)]="saveUrl.longUrl"
+          name="longUrl"
+        />
+      </div>
+
+      <button (click)="saveUrlFun()" class="btn btn-success">Submit</button>
+    </div>
+
+    <div *ngIf="submitted">
+      <h4>Url was submitted successfully!</h4>
+      <button class="btn btn-success" (click)="newSaveurlFun()">Add</button>
+    </div>
+    <div *ngIf="isError">
+      <h4>Url was not submitted! Please try again!</h4>
+    </div>
+  </div>
+</div>
