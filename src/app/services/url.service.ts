@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { StandardResponseUrl, StandardResponseUrlPagination } from '../models/standard-response-url.model';
 
-const baseUrl = 'http://localhost:9001/lowes';
+const baseUrl = 'https://lowes-bl-iyemiacw5-nareshpatilk.vercel.app/lowes';
 
 @Injectable({
   providedIn: 'root'
